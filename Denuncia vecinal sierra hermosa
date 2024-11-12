@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncia Vecinal Sierra Hermosa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .emergency-contacts {
+            list-style-type: none;
+            padding: 0;
+        }
+        .emergency-contacts li {
+            padding: 8px 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Denuncia Vecinal Sierra Hermosa</h1>
+</header>
+
+<nav>
+    <a href="#denuncia">Hacer una Denuncia</a>
+    <a href="#emergencia">Contactos de Emergencia</a>
+</nav>
+
+<section id="denuncia">
+    <h2>Hacer una Denuncia</h2>
+    <div class="form-section">
+        <form action="/enviar_denuncia" method="POST">
+            <label for="nombre">Nombre (opcional):</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="descripcion">Descripción del incidente:</label>
+            <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required>
+
+            <button type="submit">Enviar Denuncia</button>
+        </form>
+    </div>
+</section>
+
+<section id="emergencia">
+    <h2>Contactos de Emergencia</h2>
+    <ul class="emergency-contacts">
+        <li><strong>Policía:</strong> 911</li>
+        <li><strong>Bomberos:</strong> 123456789</li>
+        <li><strong>Centro de Salud:</strong> 987654321</li>
+        <!-- Agrega más contactos según necesites -->
+    </ul>
+</section>
+
+</body>
+</html>
